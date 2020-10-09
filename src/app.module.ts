@@ -8,7 +8,13 @@ import { CourierModule } from './courier/courier.module';
 import { DeliveryModule } from './delivery/delivery.module';
 import { UsersModule } from './users/users.module';
 @Module({
-  imports: [AuthModule, UsersModule, MongooseModule.forRoot(keys.mongodb), DeliveryModule, CourierModule],
+  imports: [
+    AuthModule,
+    UsersModule,
+    MongooseModule.forRoot(keys.mongodb),
+    DeliveryModule,
+    CourierModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

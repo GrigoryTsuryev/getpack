@@ -7,4 +7,5 @@
         readonly cost:number
         readonly description: string
         readonly date: number
+        readonly assigned: boolean
     }
